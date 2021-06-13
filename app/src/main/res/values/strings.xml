@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Unit Converter</string>
+    <string name="please_enter_value">Please Enter Value</string>
+    <string name="metres_to_feet">Metres To Feet</string>
+    <string name="feet_to_metres">Feet To Metres</string>
+    <string name="convert">CONVERT</string>
 </resources>

@@ -15,13 +15,42 @@
         app:layout_constraintEnd_toEndOf = "parent"
         app:layout_constraintTop_toTopOf = "parent"
         android:inputType = "numberDecimal"
-        android:hint="Please Enter Value"
+        android:hint="@string/please_enter_value"
         android:gravity="center"/>
 
     <RadioGroup
         android:id = "@+id/rgUnits"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etValue"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent">
+
+        <RadioButton
+            android:id = "@+id/metres_to_feet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/metres_to_feet"
+            android:checked = "true"/>
+
+        <RadioButton
+            android:id = "@+id/feet_to_metres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/feet_to_metres"/>
+    </RadioGroup>
+
+    <Button
+        android:id = "@+id/btnConvert"
+        android:background="@drawable/roundstyle"
+        android:layout_marginTop = "16dp"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        app:layout_constraintTop_toBottomOf = "@id/rgUnits"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        android:text = "@string/convert"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
